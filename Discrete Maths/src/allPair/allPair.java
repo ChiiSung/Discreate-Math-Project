@@ -24,6 +24,8 @@ public class allPair {
 						};
 				
 		final int NUM_OF_NODE = 15;
+		long startTime = System.nanoTime();
+        
 		for(int i = 0; i < NUM_OF_NODE; i++) { // to generate 6 matrix
 			for(int j = 0; j < NUM_OF_NODE; j++) { // for the row
 				for(int k = 0; k < NUM_OF_NODE; k++) { // for the column
@@ -42,6 +44,8 @@ public class allPair {
 			}
 			System.out.println("\n\n");
 		}
+		long elapsedTime = System.nanoTime() - startTime;
+		System.out.println("Time Execution:" + Float.valueOf(elapsedTime)/1000000000 + "sec" );
 	}
 
 }

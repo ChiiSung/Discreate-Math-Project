@@ -117,7 +117,7 @@ public class MinPathLink {
 		graph.head.findPath(graph.head,"",0,0);
 		
         long elapsedTime = System.nanoTime() - startTime;
-        System.out.println("Time Execution:" + Float.valueOf(elapsedTime)/1000000 + "sec" );
+        System.out.println("Time Execution:" + Float.valueOf(elapsedTime)/1000000000 + "sec" );
 	
         System.out.println("Distance(Km) \tPrice(RM) \tPath");
         System.out.println("-------------------------------------------------------------");

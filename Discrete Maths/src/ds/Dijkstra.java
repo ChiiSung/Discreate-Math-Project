@@ -87,7 +87,7 @@ public class Dijkstra {
 			}
 		}
         long elapsedTime = System.nanoTime() - startTime;
-        System.out.println("Time Execution:" + Float.valueOf(elapsedTime)/1000000 + "sec" );
+        System.out.println("Time Execution:" + Float.valueOf(elapsedTime)/1000000000 + "sec" );
 		printMinPath(pathArray, path, priceArray);
 	}
 }
