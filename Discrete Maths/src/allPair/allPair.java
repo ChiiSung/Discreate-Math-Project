@@ -26,7 +26,7 @@ public class allPair {
 		final int NUM_OF_NODE = 15;
 		long startTime = System.nanoTime();
         
-		for(int i = 0; i < NUM_OF_NODE; i++) { // to generate 6 matrix
+		for(int i = 0; i < NUM_OF_NODE; i++) { // to generate 15 matrix
 			for(int j = 0; j < NUM_OF_NODE; j++) { // for the row
 				for(int k = 0; k < NUM_OF_NODE; k++) { // for the column
 					if(i != j && i != k && j != k) { // if take node 0, than column 0 and row 0 will not be considered, the diagonal will always be 0, so not considered
