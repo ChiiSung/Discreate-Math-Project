@@ -25,7 +25,7 @@ public class Main {
 									};
 		
 		String stations[] = {"Kuala Lumpur", "Shah Alam", "Nilai", "Seremban", "Rembau", "Segamat", "Ayer Keroh", "Kluang", "Muar", "Batu Pahat",
-								"Kulai", "Johor Bahru Sentral", "Nusa Jaya", "Wooland, Singapore", "Jurong East, Singapore"};
+								"Kulai", "Johor Bahru Sentral", "Nusa Jaya", "Woolands, Singapore", "Jurong East, Singapore"};
 		
 		double price[][] = new double [][]{{ 0, 40, 15, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
 											 {40, 0, 0, 70, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},

@@ -5,15 +5,25 @@ public class allPair {
 
 	public static void main(String[] args) {
 		final int INF = 100000;
-		int graph[][] = {{0, 20, 40, INF, INF, INF},
-						 {20, 0, 100, INF, INF, 70},
-						 {40, 100, 0, 30, INF, INF},
-						 {INF, INF, 30, 0, 180, INF},
-						 {INF, INF, INF, 180, 0, 100},
-						 {INF, 70, INF, INF, 100, 0},
-				 		};
-		
-		final int NUM_OF_NODE = 6;
+		final int DIAGONAl = 0;
+		int graph[][] = {{ DIAGONAl, 24, 40, 55, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, 
+			 			 {24, DIAGONAl, INF, 60, 80, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},
+			 			 {40, INF, DIAGONAl, 19, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},
+			 			 {55, 60, 19, DIAGONAl, 25, 93, INF, INF, INF, INF, INF, INF, INF, INF, INF},
+			 			 {INF, 80, INF, 25, DIAGONAl ,INF, 40, INF, INF, INF, INF, INF, INF, INF, INF},
+			 			 {INF,  INF, INF, 93, INF, DIAGONAl, INF, 70, INF, INF, INF, INF, INF, INF, INF},
+			 			 {INF,  INF, INF, INF, 40, INF, DIAGONAl, 120, 43, INF, INF, INF, INF, INF, INF},
+			 			 {INF,  INF, INF, INF, INF, 70, 120, DIAGONAl, INF, INF, 56, INF, 80, INF, INF},
+			 			 {INF,  INF, INF, INF, INF, INF, 43, INF, DIAGONAl, 42, INF, INF, INF, INF, INF},
+			 			 {INF,  INF, INF, INF, INF, INF, INF, INF, 42, DIAGONAl, 76, INF, 87, INF, INF},
+			 			 {INF,  INF, INF, INF, INF, INF, INF, 56, INF, 76, DIAGONAl, 19, INF, INF, INF},
+			 			 {INF,  INF, INF, INF, INF, INF, INF, INF, INF, INF, 19, DIAGONAl, INF, 19, INF},
+			 			 {INF,  INF, INF, INF, INF, INF, INF, 80, INF, 87, INF, INF, DIAGONAl, INF, 30},
+			 			 {INF,  INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 19, INF, DIAGONAl, 20},
+			 			 {INF,  INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 30, 20, DIAGONAl}
+						};
+				
+		final int NUM_OF_NODE = 15;
 		for(int i = 0; i < NUM_OF_NODE; i++) { // to generate 6 matrix
 			for(int j = 0; j < NUM_OF_NODE; j++) { // for the row
 				for(int k = 0; k < NUM_OF_NODE; k++) { // for the column
